@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Crear un Intent para iniciar la actividad DatosOtroActivity
-                Intent intent = new Intent(MainActivity.this, DatosPerro.class);
+                Intent intent = new Intent(MainActivity.this, DatosPajaros.class);
                 startActivity(intent);
             }
         });

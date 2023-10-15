@@ -38,8 +38,8 @@ public class DatosCats extends AppCompatActivity {
             }
         });
 
-        Button botonOpcion1 = findViewById(R.id.cachorro);
-        Button botonOpcion2 = findViewById(R.id.gatoadulto);
+        Button botonOpcion1 = findViewById(R.id.bebe);
+        Button botonOpcion2 = findViewById(R.id.adulto2);
         Button botonOpcion3 = findViewById(R.id.viejo);
 
         final Button btn2aldia = findViewById(R.id.btn2aldia);

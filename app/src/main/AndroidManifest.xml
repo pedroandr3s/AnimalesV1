@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Animales"
         tools:targetApi="31">
         <activity
+            android:name=".DatosOtro"
+            android:exported="false" />
+        <activity
             android:name=".DatosPajaros"
             android:exported="false" />
         <activity

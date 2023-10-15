@@ -2,71 +2,24 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/Btn3aldia"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DatosPerro">
-
-    <EditText
-        android:id="@+id/nombreotro"
-        android:layout_width="380dp"
-        android:layout_height="107dp"
-        android:ems="10"
-        android:hint="Nombre"
-        android:inputType="text"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.086" />
-
-    <EditText
-        android:id="@+id/Pesootro"
-        android:layout_width="379dp"
-        android:layout_height="82dp"
-        android:ems="10"
-        android:hint="Peso(kg)"
-        android:inputType="number|numberDecimal"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.268" />
+    tools:context=".DatosOtro">
 
     <Button
-        android:id="@+id/Alimento"
-        android:layout_width="130dp"
-        android:layout_height="68dp"
-        android:visibility="invisible"
-        android:text="Alimentos Al Dia"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.854"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.787" />
-
-
-    <Button
-        android:id="@+id/Siguiente"
+        android:id="@+id/siguiente3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Siguiente"
-        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintHorizontal_bias="0.141"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976" />
 
     <Button
-        android:id="@+id/Volver"
+        android:id="@+id/volver3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Volver"
@@ -117,65 +70,86 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnedad"
+        android:id="@+id/alimento3"
+        android:layout_width="130dp"
+        android:layout_height="68dp"
+        android:text="Alimentos Al Dia"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.785" />
+
+    <LinearLayout
+        android:id="@+id/lyEdad"
+        android:layout_width="170dp"
+        android:layout_height="182dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.535">
+
+        <Button
+            android:id="@+id/bebe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="bebé" />
+
+        <Button
+            android:id="@+id/adulto2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="adulto" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnedad4"
         android:layout_width="113dp"
         android:layout_height="61dp"
+        android:layout_marginTop="332dp"
         android:text="Edad"
         app:layout_constraintBottom_toBottomOf="@+id/Siguiente"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.127"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.512" />
+        app:layout_constraintVertical_bias="0.472" />
 
-    <LinearLayout
-        android:id="@+id/lyEdad"
-        android:layout_width="179dp"
-        android:layout_height="208dp"
-        android:orientation="vertical"
-        android:visibility="invisible"
+    <EditText
+        android:id="@+id/pesootro3"
+        android:layout_width="379dp"
+        android:layout_height="82dp"
+        android:ems="10"
+        android:hint="Peso(kg)"
+        android:inputType="number|numberDecimal"
+        android:textAlignment="center"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.539">
+        app:layout_constraintVertical_bias="0.268" />
 
-        <Button
-            android:id="@+id/bebe"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="menos de 8 semanas" />
-
-        <Button
-            android:id="@+id/adulto2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="2 a 3 meses" />
-
-        <Button
-            android:id="@+id/viejo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="6 a 12 meses" />
-
-        <Button
-            android:id="@+id/adulto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="mayor de un año" />
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="70dp"
-        android:layout_height="48dp"
+    <EditText
+        android:id="@+id/nombreotro4"
+        android:layout_width="380dp"
+        android:layout_height="107dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.002"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.008"
-        app:srcCompat="@drawable/_f415" />
-
+        app:layout_constraintVertical_bias="0.086" />
 </androidx.constraintlayout.widget.ConstraintLayout>
