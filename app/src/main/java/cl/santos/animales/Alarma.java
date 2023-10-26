@@ -42,7 +42,7 @@ public class Alarma extends AppCompatActivity {
             minute = timePicker.getCurrentMinute();
         }
 
-        // Configurar la hora de la alarma
+
         long alarmTime = getAlarmTime(hour, minute);
 
         // Crear un intent para el servicio en segundo plano
