@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#232323"
     tools:context=".DatosPajaros">
 
     <Button
@@ -22,10 +23,13 @@
         android:id="@+id/nombreotro3"
         android:layout_width="380dp"
         android:layout_height="107dp"
+        android:background="#232323"
         android:ems="10"
         android:hint="Nombre"
         android:inputType="text"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -145,6 +149,8 @@
         android:hint="Peso(kg)"
         android:inputType="number|numberDecimal"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

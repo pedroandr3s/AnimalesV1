@@ -146,7 +146,7 @@ public class DatosPerro extends AppCompatActivity {
         siguienteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DatosPerro.this, MainActivity.class);
+                Intent intent = new Intent(DatosPerro.this, Alarma.class);
                 startActivity(intent);
             }
         });

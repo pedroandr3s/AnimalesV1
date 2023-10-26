@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#232323"
     tools:context=".MainActivity">
 
     <TextView
@@ -11,6 +12,7 @@
         android:layout_width="379dp"
         android:layout_height="103dp"
         android:text="Seleccione su mascota"
+        android:textColor="#FFFFFF"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,6 +26,7 @@
         android:id="@+id/ibPerro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#232323"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -36,6 +39,7 @@
         android:id="@+id/ibOtro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#232323"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -48,6 +52,7 @@
         android:id="@+id/ibCanario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#232323"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.019"
@@ -60,6 +65,7 @@
         android:id="@+id/ibGato"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#232323"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
