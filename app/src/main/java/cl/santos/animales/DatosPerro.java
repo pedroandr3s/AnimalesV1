@@ -1,9 +1,11 @@
 package cl.santos.animales;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,27 +20,20 @@ public class DatosPerro extends AppCompatActivity {
 
         Button volverButton = findViewById(R.id.Volver);
 
-        volverButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(DatosPerro.this, MainActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        volverButton.setOnClickListener(view -> {
+            Intent intent = new Intent(DatosPerro.this, MainActivity.class);
+            startActivity(intent);
+            finish();
         });
 
         final LinearLayout lyEdad = findViewById(R.id.lyEdad);
         final Button botonAlimento = findViewById(R.id.Alimento);
 
-
         Button botonEdad = findViewById(R.id.btnedad);
-        botonEdad.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Hacer visible el LinearLayout "Edad"
-                lyEdad.setVisibility(View.VISIBLE);
-                edadSeleccionada = true;
-            }
+        botonEdad.setOnClickListener(view -> {
+            // Hacer visible el LinearLayout "Edad"
+            lyEdad.setVisibility(View.VISIBLE);
+            edadSeleccionada = true;
         });
 
         Button botonOpcion1 = findViewById(R.id.bebe);
@@ -46,7 +41,7 @@ public class DatosPerro extends AppCompatActivity {
         Button botonOpcion3 = findViewById(R.id.viejo);
         Button botonOpcion4 = findViewById(R.id.adulto);
 
-        final Button btn2aldia = findViewById(R.id.btn2aldia);
+        @SuppressLint("CutPasteId") final Button btn2aldia = findViewById(R.id.btn2aldia);
         final Button btn3aldia = findViewById(R.id.btn3aldia);
         final Button btn4aldia = findViewById(R.id.btn4aldia);
         final Button btn5aldia = findViewById(R.id.btn5aldia);
@@ -147,7 +142,10 @@ public class DatosPerro extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(DatosPerro.this, Alarma.class);
+
                 startActivity(intent);
+
+
             }
         });
 
