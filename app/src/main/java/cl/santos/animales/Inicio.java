@@ -15,10 +15,16 @@ public class Inicio extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio);
         ImageButton btnMapa = findViewById(R.id.Mapa);
+        ImageButton btnMas = findViewById(R.id.btnmas);
 
         btnMapa.setOnClickListener(v -> {
             // Crear un Intent para iniciar la actividad DatosOtroActivity
             Intent intent = new Intent(Inicio.this, MapsActivity.class);
+            startActivity(intent);
+        });
+        btnMas.setOnClickListener(v -> {
+            // Crear un Intent para iniciar la actividad DatosOtroActivity
+            Intent intent = new Intent(Inicio.this, MainActivity.class);
             startActivity(intent);
         });
     }
