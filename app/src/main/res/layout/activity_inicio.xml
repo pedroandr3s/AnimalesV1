@@ -51,6 +51,7 @@
         android:id="@+id/btnmas"
         android:layout_width="179dp"
         android:layout_height="171dp"
+        android:background="@drawable/_168819"
         android:backgroundTint="#232323"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
