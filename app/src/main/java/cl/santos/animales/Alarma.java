@@ -65,8 +65,7 @@ public class Alarma extends AppCompatActivity {
             NotificationChannel channel = new NotificationChannel("canal_id", name, importance);
             channel.setDescription(description);
 
-            // Registrar el canal con el NotificationManager
-            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+             NotificationManager notificationManager = getSystemService(NotificationManager.class);
             notificationManager.createNotificationChannel(channel);
         }
     }
@@ -79,16 +78,14 @@ public class Alarma extends AppCompatActivity {
         int hourOfDay = selectedDateTime.get(Calendar.HOUR_OF_DAY);
         int minute = selectedDateTime.get(Calendar.MINUTE);
 
-        // Mostrar un DatePickerDialog para seleccionar la fecha
-        DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+         DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                 selectedDateTime.set(Calendar.YEAR, year);
                 selectedDateTime.set(Calendar.MONTH, month);
                 selectedDateTime.set(Calendar.DAY_OF_MONTH, dayOfMonth);
 
-                // Mostrar un TimePickerDialog para seleccionar la hora
-                TimePickerDialog timePickerDialog = new TimePickerDialog(Alarma.this, new TimePickerDialog.OnTimeSetListener() {
+                 TimePickerDialog timePickerDialog = new TimePickerDialog(Alarma.this, new TimePickerDialog.OnTimeSetListener() {
                     @Override
                     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
                         selectedDateTime.set(Calendar.HOUR_OF_DAY, hourOfDay);
