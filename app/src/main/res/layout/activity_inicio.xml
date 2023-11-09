@@ -22,17 +22,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.024" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/Registro"
-        android:layout_width="407dp"
-        android:layout_height="400dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.344" />
-
     <ImageButton
         android:id="@+id/Mapa"
         android:layout_width="163dp"
@@ -61,5 +50,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.994"
         app:srcCompat="@drawable/_168819" />
+
+    <ListView
+        android:id="@+id/listRecibir"
+        android:layout_width="409dp"
+        android:layout_height="464dp"
+        android:backgroundTint="#FFFFFF"
+        android:cacheColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.34" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

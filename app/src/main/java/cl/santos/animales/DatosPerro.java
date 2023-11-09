@@ -7,11 +7,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import cl.santos.animales.Alarma;
+
 public class DatosPerro extends AppCompatActivity {
     private boolean edadSeleccionada = false;
+    private EditText nombre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +26,7 @@ public class DatosPerro extends AppCompatActivity {
         setContentView(R.layout.activity_datos_perro);
 
         Button volverButton = findViewById(R.id.Volver);
-
+        nombre= findViewById(R.id.nombreotro);
         volverButton.setOnClickListener(view -> {
             Intent intent = new Intent(DatosPerro.this, MainActivity.class);
             startActivity(intent);
@@ -145,11 +152,34 @@ public class DatosPerro extends AppCompatActivity {
 
                 startActivity(intent);
 
+                guardarInformacionEnFirebase();
+
+
 
             }
         });
 
-
     }
-}
 
+
+    private void guardarInformacionEnFirebase() {
+        String titulo = nombre.getText().toString();
+
+        // Inicializa la referencia a la base de datos Firebase
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference ref = database.getReference("Nombre");
+
+        // Crea un nuevo nodo con una clave única y establece los datos
+        DatabaseReference nuevoNombreRef = ref.push();
+        nuevoNombreRef.child("titulo").setValue(titulo, (databaseError, databaseReference) -> {
+            if (databaseError != null) {
+                // Handle the error here, e.g., Log.e("FirebaseError", databaseError.getMessage());
+                Toast.makeText(DatosPerro.this, "Error al guardar los datos en Firebase", Toast.LENGTH_SHORT).show();
+            } else {
+                // Datos guardados con éxito
+                Toast.makeText(DatosPerro.this, "Datos guardados correctamente en Firebase", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+}
