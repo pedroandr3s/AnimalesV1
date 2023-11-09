@@ -60,6 +60,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.994"
-        app:srcCompat="@drawable/_000_f_610024683_mdafubfor5thjfswjhhwwkbrikzyqm0p" />
+        app:srcCompat="@drawable/_168819" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
