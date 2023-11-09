@@ -165,7 +165,7 @@ public class DatosPerro extends AppCompatActivity {
     private void guardarInformacionEnFirebase() {
         String titulo = nombre.getText().toString();
 
-        // Inicializa la referencia a la base de datos Firebase
+        // Inicializa la referenia a la base de datos Firebase
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference ref = database.getReference("Nombre");
 
